@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 100px 100px;
+}
+
+/* first gif */
+.text {
+    font-size: 40px;
+    font-weight: bold;
+    color: orange;
+}
+
+.text:hover {
+    text-shadow: 11px 7px 3px lime;
+}
+
+.box {
+    margin-bottom: 50px;
+    width: 300px;
+    height: 150px;
+}
+
+.firstbox {
+    background-color: green;
+    transition: background-color 1s 0.25s, border-radius 1s 0.25s;
+}
+.firstbox:hover {
+    background-color: greenyellow;
+    border: 10px solid green;
+    border-radius: 13em 0.5em/1em 0.5em;
+}
+
+.secondbox {
+    background-color: brown;
+    border: 10px inset transparent;
+    transition: all 1s 0.25s;
+}
+.secondbox:hover {
+    border: 10px inset lightblue;
+    border-right: 10px inset brown;
+    border-bottom: 10px inset brown;
+    background-color: blanchedalmond;
+}
+
+.thirdbox {
+    background-color: yellow;
+    border: 10px solid orange;
+    transition: all 1s 0.25s;  
+    outline: 10px solid transparent;
+}
+.thirdbox:hover {
+    outline: 10px solid red;
+    outline-offset: 10px;
+}
+
+.fourthbox {
+    background-color: grey;
+    transition: all 1s 0.25s;  
+}
+.fourthbox:hover {
+    transform: scale(1.2, 0.8); 
+    box-shadow: 0 10px 10px -5px;    
+}
+
+/* second gif */
+
+.case {
+    width: 150px;
+    height: 150px;
+    margin: 0;
+    font-size: 0px;
+    transition: 1s;
+}
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+.redcase {
+    background-color: red;
+}
+.yellowcase {
+    background-color: yellow;
+}
+.bluecase {    
+    background-color: blue;
+}
+.greencase {
+    background-color: green;
+}
+.text-info {
+    position: absolute;
+    top: calc(50% - 21px);
+    left: calc(50% - 27px);
+    z-index: -1;
+    font-size: 40px;
+}
+
+.block:hover .redcase {
+    transform: rotate(90deg) translateY(150px);
+}
+
+.block:hover .yellowcase {
+    transform: rotate(-90deg) translateY(150px);
+}
+
+.block:hover .bluecase {
+    transform: rotate(-90deg) translateY(-150px);
+}
+
+.block:hover .greencase {
+    transform: rotate(90deg) translateY(-150px);
+}
